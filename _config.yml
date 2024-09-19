@@ -1,3 +1,7 @@
-theme: jekyll-theme-minimal
-title: "Mi Portafolio"
-description: "Este es mi portafolio."
+title: "Portafolio de Ayelén"
+description: "Analista de sistemas y promotora de la inclusión social."
+theme: jekyll-theme-minimal  # O el tema que hayas elegido
+author: "Ayelén"
+email: "tuemail@ejemplo.com"
+twitter_username: ayelen_twitter
+github_username: ayerobredo
