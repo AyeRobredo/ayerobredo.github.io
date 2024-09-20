@@ -11135,6 +11135,8 @@ footer.footer .social-link:hover {
   font-size: 12px; /* Tamaño del porcentaje */
   margin-left: 5px; /* Espacio entre el nombre y el porcentaje */
 }
-#skills {
-  padding: 60px 0; /* Agrega espacio superior e inferior */
+#about, #skills {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0; /* Asegúrate de que no haya margen inferior */
 }
