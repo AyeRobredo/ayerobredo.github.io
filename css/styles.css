@@ -11131,19 +11131,10 @@ footer.footer .social-link:hover {
   overflow: hidden;
   height: 20px; /* Reduce la altura de la barra de progreso */
 }
-
-.progress-bar {
-  background-color: #c085d6; /* Color de la barra */
-  height: 100%;
-  transition: width 0.5s;
-  font-size: 12px; /* Cambia el tamaño del texto dentro de la barra (si se usa) */
-}
-
 .percentage {
   font-size: 12px; /* Tamaño del porcentaje */
   margin-left: 5px; /* Espacio entre el nombre y el porcentaje */
 }
 #skills {
-  background-color: #f8f9fa; /* Cambia a un color más claro o diferente */
   padding: 60px 0; /* Agrega espacio superior e inferior */
 }
