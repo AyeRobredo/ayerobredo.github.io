@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     const sidebarWrapper = document.getElementById('sidebar-wrapper');
     let scrollToTopVisible = false;
+
     // Closes the sidebar menu
     const menuToggle = document.body.querySelector('.menu-toggle');
     menuToggle.addEventListener('click', event => {
@@ -14,7 +15,7 @@ window.addEventListener('DOMContentLoaded', event => {
         sidebarWrapper.classList.toggle('active');
         _toggleMenuIcon();
         menuToggle.classList.toggle('active');
-    })
+    });
 
     // Closes responsive menu when a scroll trigger link is clicked
     var scrollTriggerList = [].slice.call(document.querySelectorAll('#sidebar-wrapper .js-scroll-trigger'));
@@ -23,7 +24,7 @@ window.addEventListener('DOMContentLoaded', event => {
             sidebarWrapper.classList.remove('active');
             menuToggle.classList.remove('active');
             _toggleMenuIcon();
-        })
+        });
     });
 
     function _toggleMenuIcon() {
@@ -53,8 +54,33 @@ window.addEventListener('DOMContentLoaded', event => {
                 scrollToTopVisible = false;
             }
         }
-    })
-})
+    });
+
+    // Manejo del formulario de contacto
+    const contactForm = document.querySelector('#contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+
+            fetch('https://formspree.io/f/xnnakprj', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Mensaje enviado!');
+                    this.reset(); // Resetea el formulario
+                } else {
+                    alert('Error al enviar el mensaje, por favor intenta de nuevo.');
+                }
+            });
+        });
+    }
+
+});
 
 function fadeOut(el) {
     el.style.opacity = 1;
