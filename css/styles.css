@@ -11113,3 +11113,37 @@ footer.footer .social-link:hover {
   margin-top: 20px; /* Añadir espacio entre el botón y el textarea */
   padding: 10px 20px; /* Ajustar tamaño del botón */
   font-size: 16px; /* Reducir el tamaño de la fuente del botón */
+}
+
+.skill {
+  margin-bottom: 15px; /* Reduce el espacio entre habilidades */
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 3px; /* Reduce el margen inferior */
+  font-size: 14px; /* Cambia el tamaño del texto */
+}
+
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px; /* Reduce la altura de la barra de progreso */
+}
+
+.progress-bar {
+  background-color: #c085d6; /* Color de la barra */
+  height: 100%;
+  transition: width 0.5s;
+  font-size: 12px; /* Cambia el tamaño del texto dentro de la barra (si se usa) */
+}
+
+.percentage {
+  font-size: 12px; /* Tamaño del porcentaje */
+  margin-left: 5px; /* Espacio entre el nombre y el porcentaje */
+}
+#skills {
+  background-color: #f8f9fa; /* Cambia a un color más claro o diferente */
+  padding: 60px 0; /* Agrega espacio superior e inferior */
+}
