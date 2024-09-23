@@ -10963,6 +10963,7 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 100px 0;
 }
 .callout h2, .callout .h2 {
   font-size: 3.5rem;
@@ -10970,7 +10971,13 @@ html {
   display: block;
   max-width: 30rem;
 }
-
+@media (max-width: 768px) {
+    .callout {
+        background-size: cover; /* En pantallas pequeñas, muestra toda la imagen */
+        background-position: center;
+        padding: 50px 0; /* Reduce el padding en pantallas pequeñas para evitar demasiado espacio */
+    }
+}
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -11139,4 +11146,10 @@ footer.footer .social-link:hover {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 0; /* Asegúrate de que no haya margen inferior */
+}
+label {
+  font-weight: bold; /* Hace que todos los labels estén en negrita */
+}
+.form-group {
+  margin-bottom: 10px; /* Ajusta este valor según lo que necesites */
 }
