@@ -10983,19 +10983,25 @@ footer.footer {
   padding-bottom: 5rem;
 }
 footer.footer .social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
+  align-items: center;
   height: 4rem;
   width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
   background-color: #c085d6;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50%; /* Bordes redondeados */
 }
 footer.footer .social-link:hover {
   background-color: #b485bc;
   text-decoration: none;
+}
+
+footer.footer .social-link img {
+  width: 70%; /* Ajusta el tamaño de la imagen */
+  height: 70%; /* Ajusta el tamaño de la imagen */
 }
 
 .map {
