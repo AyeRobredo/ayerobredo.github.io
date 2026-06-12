@@ -1,5 +1,5 @@
 /*!
-* Ayelén Robredo — Portfolio
+* Ayelen Robredo — Portfolio
 * Vanilla JS, sin dependencias externas (IIFE pattern)
 */
 (function () {
