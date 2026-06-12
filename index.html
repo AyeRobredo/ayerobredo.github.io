@@ -1,303 +1,492 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Ayelen Robredo</title>
+        <meta name="description" content="Ayelén Robredo — Desarrolladora web freelance y analista funcional. Sitios web a medida, landing pages, consultoría de producto y análisis de requerimientos." />
+        <meta name="author" content="Ayelén Robredo" />
+        <meta name="keywords" content="desarrolladora web freelance, desarrollo web a medida, analista funcional, product discovery, La Plata, Argentina" />
+        <title>Ayelén Robredo · Desarrolladora Web Freelance</title>
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Ayelén Robredo · Desarrolladora Web Freelance" />
+        <meta property="og:description" content="Sitios web a medida, landing pages y consultoría de producto / análisis funcional." />
+        <meta property="og:image" content="assets/img/profile.webp" />
+        <meta property="og:url" content="https://ayerobredo.github.io/" />
+
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
+
+        <!-- Font Awesome icons -->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Google fonts: Sora (display) + Inter (body) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
+
+        <!-- Core theme CSS -->
+        <link href="css/styles.css?v=20260612" rel="stylesheet" />
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-37Z4EN2VXS"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-        
           gtag('config', 'G-37Z4EN2VXS');
         </script>
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top"></a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Inicio</a></li>
-                <li class="sidebar-nav-item"><a href="#about-skills">Sobre mi</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Servicios</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-        <!-- Header-->
-        <header class="masthead d-inline-block align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">Ayelen Robredo</h1>
-                <h3 class="mb-5"><em>Analista de Sistemas</em></h3>
-                <div clas="d-flex">
-                    <a class="btn btn-primary btn-xl" href="#about-skills">Saber mas</a>
-                    <a class="btn btn-primary btn-xl" href="/docs/CV ROBREDO AYELEN.pdf" download="AyelenRobredo_CV.pdf">Descargar CV</a>
+    <body>
+
+        <!-- Navigation -->
+        <header class="site-nav" data-nav>
+            <div class="container nav-inner">
+                <a class="nav-brand" href="#page-top">
+                    <span class="dot"></span>
+                    <span class="full">Ayelén Robredo</span>
+                </a>
+                <nav class="nav-links" data-nav-links>
+                    <a href="#page-top" class="js-nav-link">Inicio</a>
+                    <a href="#about" class="js-nav-link">Sobre mí</a>
+                    <a href="#services" class="js-nav-link">Servicios</a>
+                    <a href="#skills" class="js-nav-link">Habilidades</a>
+                    <a href="#portfolio" class="js-nav-link">Proyectos</a>
+                    <a href="#contact" class="js-nav-link">Contacto</a>
+                </nav>
+                <div class="nav-cta">
+                    <a class="btn btn-ghost" href="docs/CV ROBREDO AYELEN.pdf" download="AyelenRobredo_CV.pdf">
+                        <i class="fa-solid fa-download"></i> CV
+                    </a>
+                    <a class="btn btn-primary js-nav-link" href="#contact">Hablemos</a>
+                    <button class="nav-toggle" data-nav-toggle aria-label="Abrir menú">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
         </header>
-        <!-- About and Skills Section -->
-        <section class="content-section bg-light" id="about-skills">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Sobre mí</h2>
-                        <p class="lead mb-5">
-                            ¡Hola! Soy Ayelén, analista de sistemas y apasionada por la tecnología. A lo largo de mi carrera, he tenido la oportunidad de trabajar en proyectos diversos que me han permitido desarrollar habilidades tanto en programación como en la mejora de sistemas y procesos.<br><br>
 
-                            Tengo un enfoque orientado a la innovación y me motiva crear soluciones que generen impacto positivo. Me gusta mantenerme en constante aprendizaje y siempre estoy buscando nuevas maneras de mejorar tanto a nivel técnico como personal.<br><br>
+        <!-- Hero -->
+        <section class="hero" id="page-top">
+            <div class="hero-mesh" data-mesh></div>
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content reveal">
+                        <p class="kicker">Desarrollo Web · Análisis Funcional · Producto</p>
+                        <h1 class="hero-title">Convierto ideas en <em>productos digitales</em> claros y funcionales.</h1>
+                        <p class="hero-sub">
+                            Soy Ayelén Robredo, desarrolladora web freelance con base en La Plata, Argentina.
+                            Diseño y construyo sitios web a medida, y ayudo a equipos y emprendedores a ordenar
+                            los requerimientos de su próximo proyecto digital antes de escribir una línea de código.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary js-nav-link" href="#services">Ver servicios</a>
+                            <a class="btn btn-ghost js-nav-link" href="#contact">Iniciar un proyecto</a>
+                        </div>
+                        <div class="hero-meta">
+                            <div class="hero-meta-item">
+                                <strong>+3</strong>
+                                <span>Años en análisis funcional</span>
+                            </div>
+                            <div class="hero-meta-item">
+                                <strong>10+</strong>
+                                <span>Tecnologías de su stack</span>
+                            </div>
+                            <div class="hero-meta-item">
+                                <strong>100%</strong>
+                                <span>Remoto &amp; freelance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual reveal">
+                        <span class="hero-deco">Open to work</span>
+                        <div class="hero-photo-frame">
+                            <img src="assets/img/profile.webp" alt="Foto de Ayelén Robredo" width="480" height="640" />
+                        </div>
+                        <div class="hero-badge">
+                            <span class="pulse"></span>
+                            Disponible para nuevos proyectos
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-cue">
+                <span>Scroll</span>
+                <span class="line"></span>
+            </div>
+        </section>
 
-                            En mis proyectos me gusta mantener un balance entre la funcionalidad y la experiencia de usuario, buscando siempre que la tecnología sea accesible y útil para todos. Además, estoy comprometida con la inclusión social y tecnológica, participando activamente en iniciativas que brindan oportunidades de desarrollo a quienes más lo necesitan.
+        <!-- About -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-figure reveal">
+                        <div class="about-card">
+                            <img src="assets/img/profile.webp" alt="Ayelén Robredo" width="480" height="640" />
+                        </div>
+                        <div class="about-tagline">
+                            <span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                            <p>Tecnicatura en Análisis de Sistemas (2020) · Licenciatura en Informática en curso (UNLP)</p>
+                        </div>
+                    </div>
+                    <div class="about-body reveal">
+                        <p class="kicker">Sobre mí</p>
+                        <h2>Del análisis funcional al código, y de vuelta.</h2>
+                        <p>
+                            Hace más de tres años trabajo como <strong>analista funcional</strong>, traduciendo
+                            necesidades de negocio en especificaciones claras y haciendo de puente entre clientes
+                            y equipos técnicos. En paralelo, desarrollo sitios y aplicaciones web — desde landing
+                            pages hasta herramientas a medida.
                         </p>
-                        <h2 class="section-heading">Habilidades</h2>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="skill">
-                                    <span class="skill-name">CSS</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 80%;"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">HTML</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 80%;"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">Python</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 90%;"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">SQL</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 95%;"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">NoSQL</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 90%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="skill">
-                                    <span class="skill-name">Ruby</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 80%;"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">React</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 60%;"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">JavaScript</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 70%;"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">Java</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 70%;"></div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <span class="skill-name">Scrum</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" style="width: 95%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Botón centrado -->
-                        <div class="d-flex justify-content-center mt-4">
-                            <a class="btn btn-primary btn-xl" href="#services">Lo que hago..</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h2 class="mb-5">Servicios</h2>
-                </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-globe"></i></span>
-                        <h4><strong>Desarrollo Web</strong></h4>
-                        <p class="text-faded mb-0">Páginas web modernas y responsivas.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
-                        <h4><strong>Consultoria</strong></h4>
-                        <p class="text-faded mb-0">Asesoramiento en la optimización de sistemas.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-magnifier"></i></span>
-                        <h4><strong>Project Discovery</strong></h4>
-                        <p class="text-faded mb-0">
-                            Definir los requerimientos del proyecto.
+                        <p>
+                            Esa doble mirada es mi diferencial: no solo entrego un sitio web, entiendo el problema
+                            que hay detrás. Si tu proyecto todavía no tiene los requerimientos claros, te ayudo a
+                            definirlos; si ya sabés qué necesitás, lo construyo.
                         </p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-settings"></i></span>
-                        <h4><strong>Automatización</strong></h4>
-                        <p class="text-faded mb-0">Automatización de procesos para mayor eficiencia.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Callout-->
-        <section class="callout">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mx-auto mb-5">
-                    ¿Tienes alguna consulta?
-                </h2>
-                <a class="btn btn-primary btn-xl" href="#contact">Hablemos</a>
-            </div>
-        </section>
-        <!-- Portfolio
-        <section class="content-section" id="portfolio">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Stationary</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                                </div>
+                        <p>
+                            Además, soy tutora en Coderhouse (Python, metodologías ágiles y liderazgo), lo que me
+                            mantiene en constante actualización y me da una forma clara de explicar lo técnico a
+                            quien no lo es.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <strong>Full Stack</strong>
+                                <span>HTML, CSS, JS, React, Node</span>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                                </div>
+                            <div class="highlight">
+                                <strong>Análisis</strong>
+                                <span>Funcional &amp; Product Discovery</span>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- Contact Section -->
-        <section class="content-section bg-light" id="contact">
-            <div class="container px-4 px-lg-5">
-                <div class="text-center">
-                    <h2 class="section-heading">Contacto</h2>
-                </div>
-                <form id="contactForm" action="https://formspree.io/f/xnnakprj" method="POST">
-                    <div class="row align-items-stretch mb-3">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="name">Nombre completo *</label>
-                                    <input class="form-control" id="name" name="name" type="text" placeholder="Juan Perez" required />
+                            <div class="highlight">
+                                <strong>Ágil</strong>
+                                <span>Scrum &amp; gestión de equipos</span>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="email">Correo electrónico *</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="kicker">Servicios</p>
+                    <h2>Dos formas de trabajar juntos</h2>
+                    <p>Elegí desarrollo a medida, consultoría de producto, o ambas combinadas según el momento de tu proyecto.</p>
+                </div>
+                <div class="services-tracks">
+                    <div class="track dev reveal">
+                        <div class="track-head">
+                            <span class="track-icon"><i class="fa-solid fa-code"></i></span>
+                            <div>
+                                <h3>Desarrollo Web</h3>
+                                <p>Para llevar tu idea a producción</p>
+                            </div>
+                        </div>
+                        <div class="service-list">
+                            <div class="service-item">
+                                <span class="num">01</span>
+                                <div>
+                                    <h4>Sitios web a medida</h4>
+                                    <p>Diseño y desarrollo de sitios responsivos, rápidos y fáciles de mantener.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <span class="num">02</span>
+                                <div>
+                                    <h4>Landing pages</h4>
+                                    <p>Páginas de aterrizaje enfocadas en convertir visitas en clientes o leads.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <span class="num">03</span>
+                                <div>
+                                    <h4>Mantenimiento &amp; mejoras</h4>
+                                    <p>Actualización, optimización y nuevas funcionalidades sobre sitios existentes.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <span class="num">04</span>
+                                <div>
+                                    <h4>Automatización con Python</h4>
+                                    <p>Scripts y procesos que ahorran tiempo en tareas repetitivas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="track consulting reveal">
+                        <div class="track-head">
+                            <span class="track-icon"><i class="fa-solid fa-diagram-project"></i></span>
+                            <div>
+                                <h3>Consultoría &amp; Producto</h3>
+                                <p>Para ordenar las ideas antes (o durante) la construcción</p>
+                            </div>
+                        </div>
+                        <div class="service-list">
+                            <div class="service-item">
+                                <span class="num">01</span>
+                                <div>
+                                    <h4>Análisis funcional</h4>
+                                    <p>Relevamiento y documentación de requerimientos para que el equipo técnico
+                                        sepa exactamente qué construir.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <span class="num">02</span>
+                                <div>
+                                    <h4>Product Discovery</h4>
+                                    <p>Definición de alcance, validación de hipótesis y priorización de funcionalidades.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <span class="num">03</span>
+                                <div>
+                                    <h4>Gestión ágil</h4>
+                                    <p>Organización de equipos y backlogs con Scrum, foco en entregas continuas.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <span class="num">04</span>
+                                <div>
+                                    <h4>Acompañamiento técnico</h4>
+                                    <p>Puente entre las necesidades del negocio y la ejecución de desarrollo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="section process" id="process">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="kicker">Cómo trabajo</p>
+                    <h2>Un proceso simple, de punta a punta</h2>
+                    <p>Sin vueltas: hablamos claro desde el primer contacto hasta la entrega.</p>
+                </div>
+                <div class="process-grid">
+                    <div class="process-step reveal">
+                        <span class="step-num">01</span>
+                        <h4>Descubrimiento</h4>
+                        <p>Conversamos sobre tu idea, tus objetivos y quiénes usarán el producto.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <span class="step-num">02</span>
+                        <h4>Propuesta</h4>
+                        <p>Te armo un plan claro: alcance, tiempos y costos, sin letra chica.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <span class="step-num">03</span>
+                        <h4>Desarrollo</h4>
+                        <p>Construyo (o analizo) por etapas, con avances y feedback constante.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <span class="step-num">04</span>
+                        <h4>Entrega &amp; soporte</h4>
+                        <p>Lanzamos juntas y te acompaño en los ajustes que surjan después.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="kicker">Habilidades</p>
+                    <h2>Stack y herramientas</h2>
+                    <p>El mismo set de herramientas que uso para desarrollar, analizar y gestionar proyectos.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-group reveal">
+                        <h3><span class="icon"><i class="fa-solid fa-laptop-code"></i></span> Front-end &amp; Desarrollo</h3>
+                        <div class="tag-cloud">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Ruby</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3><span class="icon"><i class="fa-solid fa-database"></i></span> Datos &amp; Backend</h3>
+                        <div class="tag-cloud">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">NoSQL</span>
+                            <span class="tag">R</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3><span class="icon"><i class="fa-solid fa-diagram-project"></i></span> Producto &amp; Metodologías</h3>
+                        <div class="tag-cloud">
+                            <span class="tag">Análisis funcional</span>
+                            <span class="tag">Product Discovery</span>
+                            <span class="tag">Scrum</span>
+                            <span class="tag">Gestión de equipos</span>
+                            <span class="tag">Data Analytics</span>
+                            <span class="tag">Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="section portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="kicker">Proyectos</p>
+                    <h2>Portfolio en construcción</h2>
+                    <p>Estoy documentando mis primeros proyectos freelance. Mientras tanto, así son los formatos en los que puedo ayudarte.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="project-card reveal">
+                        <div class="project-thumb">
+                            <i class="fa-solid fa-globe"></i>
+                            <span class="project-status">Próximamente</span>
+                        </div>
+                        <div class="project-body">
+                            <h4>Sitio institucional</h4>
+                            <p>Presentación profesional para emprendimientos, consultoras o profesionales independientes.</p>
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-thumb">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <span class="project-status">Próximamente</span>
+                        </div>
+                        <div class="project-body">
+                            <h4>Landing de producto</h4>
+                            <p>Página enfocada en conversión para lanzar un producto, servicio o evento.</p>
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-thumb">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span class="project-status">Próximamente</span>
+                        </div>
+                        <div class="project-body">
+                            <h4>Documentación funcional</h4>
+                            <p>Relevamiento y especificación de requerimientos para un proyecto de software.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-cta reveal">
+                    <h3>¿Tenés un proyecto en mente?</h3>
+                    <p>Sumalo como mi próximo caso de estudio: trabajemos juntas en las condiciones de un proyecto piloto.</p>
+                    <a class="btn btn-primary js-nav-link" href="#contact">Contame tu idea</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <p class="kicker">Contacto</p>
+                        <h2>Hablemos de tu proyecto</h2>
+                        <p>
+                            Contame qué necesitás — un sitio nuevo, mejoras sobre uno existente, o ayuda para
+                            ordenar los requerimientos de tu producto. Te respondo a la brevedad.
+                        </p>
+                        <div class="contact-channels">
+                            <a class="contact-channel" href="mailto:ayerobredo@gmail.com">
+                                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                                <span class="text">
+                                    <strong>Email</strong>
+                                    <span>ayerobredo@gmail.com</span>
+                                </span>
+                            </a>
+                            <a class="contact-channel" href="https://wa.me/5492216045310" target="_blank" rel="noopener">
+                                <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+                                <span class="text">
+                                    <strong>WhatsApp</strong>
+                                    <span>+54 9 221 604-5310</span>
+                                </span>
+                            </a>
+                            <a class="contact-channel" href="https://www.linkedin.com/in/ayelenrobredo/" target="_blank" rel="noopener">
+                                <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                                <span class="text">
+                                    <strong>LinkedIn</strong>
+                                    <span>/in/ayelenrobredo</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <form id="contactForm" class="contact-form-card" action="https://formspree.io/f/xnnakprj" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nombre completo *</label>
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Juan Pérez" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico *</label>
                                     <input class="form-control" id="email" name="email" type="email" placeholder="ejemplo@email.com" required />
+                                </div>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label for="message">Contame sobre tu proyecto *</label>
+                                <textarea class="form-control" id="message" name="message" required placeholder="¿Qué necesitás y para cuándo?"></textarea>
+                            </div>
+                            <button class="btn btn-primary btn-block" id="sendMessageButton" type="submit">
+                                <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
+                            </button>
+                            <p class="form-status" data-form-status></p>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje *</label>
-                            <textarea class="form-control" id="message" name="message" required></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-dark btn-xl" id="sendMessageButton" type="submit">Enviar mensaje</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/ayelenrobredo/">
-                            <img src="/assets/img/linkedin.png" alt="linkedin" class="icon" style="width: 60%; height: 60%;">
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">Ayelén Robredo</div>
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/ayelenrobredo/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/analizaye/">
-                            <img src="/assets/img/insta.png" alt="Instagram" class="icon" style="width: 60%; height: 60%;">
+                    <li>
+                        <a href="https://github.com/AyeRobredo" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="https://github.com/AyeRobredo" target="_blank">
-                            <img src="/assets/img/github.png" alt="GitHub" class="icon" style="width: 60%; height: 60%;">
+                    <li>
+                        <a href="https://gitlab.com/AyeRobredo" target="_blank" rel="noopener" aria-label="GitLab">
+                            <i class="fa-brands fa-gitlab"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="https://gitlab.com/AyeRobredo" target="_blank">
-                            <img src="/assets/img/gitlab.png" alt="GitLab" class="icon" style="width: 60%; height: 60%;">
+                    <li>
+                        <a href="https://www.instagram.com/analizaye/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:ayerobredo@gmail.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
                         </a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-0"> &copy; 2024 Ayelen Robredo. Todos los derechos reservados.</p>
+                <p class="footer-bottom">&copy; <span data-year>2026</span> Ayelén Robredo · Desarrolladora Web Freelance. Todos los derechos reservados.</p>
             </div>
         </footer>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+
+        <!-- Scroll to Top Button -->
+        <a class="scroll-to-top" href="#page-top" data-scroll-top aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></a>
+
+        <!-- Theme JS -->
+        <script src="js/scripts.js?v=20260612"></script>
     </body>
 </html>
