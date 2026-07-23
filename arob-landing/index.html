@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AROB — Desarrollo de software y producto</title>
+  <meta name="description" content="AROB: desarrollo de producto, web y apps a medida. Diagnóstico, propuesta y entrega, empezando freelance y creciendo con colegas cuando el proyecto lo pide." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="styles.css?v=20260723" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233454d1'/%3E%3Ctext x='32' y='42' font-size='30' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3E@%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">@</span>
+        AROB
+      </a>
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#sobre">Sobre AROB</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="#contacto">Escribime</a>
+      <button class="nav-toggle" aria-label="Abrir menú" onclick="document.querySelector('.nav-links').classList.toggle('is-open')">☰</button>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-mesh" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="eyebrow reveal">Estudio de desarrollo · Freelance</span>
+          <h1 class="hero-title reveal">Software y producto, <em>sin vueltas</em>.</h1>
+          <p class="hero-sub reveal">Desarrollo de productos digitales de punta a punta: de la idea al código en producción, con la calidad de un equipo aunque hoy trabaje solo.</p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#contacto">Escribime</a>
+            <a class="btn btn-glass" href="https://ayerobredo.github.io" target="_blank" rel="noopener">Ver portfolio</a>
+          </div>
+          <div class="hero-meta reveal">
+            <span>Desarrollo web y apps</span>
+            <span>Producto / MVP</span>
+            <span>Disponible para nuevos proyectos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Servicios</span>
+          <h2 class="section-title">En qué puedo ayudar</h2>
+          <p class="section-sub">Tres formas de trabajar juntos, según qué tan definido esté el problema.</p>
+        </div>
+        <div class="services-grid" data-services></div>
+      </div>
+    </section>
+
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Proceso</span>
+          <h2 class="section-title">Cómo se arma un proyecto</h2>
+          <p class="section-sub">Simple a propósito. Menos ceremonia, más avance.</p>
+        </div>
+        <div class="process-list" data-process></div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="manifesto">
+          <p class="manifesto-lead reveal">AROB nace como estudio freelance de desarrollo, con la idea de crecer.</p>
+          <div class="manifesto-body reveal">
+            <p>Hoy es un solo desarrollador tomando proyectos de principio a fin. Mañana, según lo que cada proyecto necesite, se suman colegas con otras especialidades: diseño, infraestructura, producto.</p>
+            <p>La promesa no cambia con el tamaño del equipo: alcance claro, comunicación directa y código que se puede mantener después de que el proyecto termine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contacto</span>
+          <h2 class="section-title">Empecemos una conversación</h2>
+          <p class="section-sub">Contame de qué se trata el proyecto y en qué etapa está.</p>
+        </div>
+        <div class="contact-wrap">
+          <div class="glass-card contact-card reveal">
+            <h3 class="card-title">Otras formas de contacto</h3>
+            <div class="contact-links" data-contact-links></div>
+          </div>
+
+          <form class="glass-card contact-card reveal" id="contact-form">
+            <h3 class="card-title">Contame tu proyecto</h3>
+            <div class="form-grid">
+              <div class="field">
+                <label for="f-name">Nombre</label>
+                <input id="f-name" name="name" type="text" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="f-email">Email</label>
+                <input id="f-email" name="email" type="email" required autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="f-message">Contame brevemente de qué se trata</label>
+                <textarea id="f-message" name="message" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+              <p class="form-note">Se abre tu programa de correo con el mensaje ya armado.</p>
+              <p class="form-status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© <span data-year></span> AROB. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="mailto:ayerobredo@gmail.com">Email</a>
+        <a href="https://ayerobredo.github.io" target="_blank" rel="noopener">Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="lib/manifest.js"></script>
+  <script defer src="main.js?v=20260723"></script>
+</body>
+</html>

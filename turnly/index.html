@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turnly — Turnos online sin dolores de cabeza</title>
+  <meta name="description" content="Turnly: agenda de turnos online para negocios de servicios. Proyecto conceptual de portfolio." />
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+  <link rel="stylesheet" href="styles.css?v=20260723" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a0a'/%3E%3Ctext x='32' y='42' font-size='30' font-family='monospace' font-weight='700' fill='%2300ff88' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <div class="demo-banner">Proyecto conceptual de portfolio — no es un producto ni una empresa real</div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">Turnly<span class="dot">.</span></a>
+      <nav class="nav-links">
+        <a href="#producto">Producto</a>
+        <a href="#precios">Precios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-accent" href="#contacto">Probar gratis</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-gradient" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <span class="kicker reveal">Agenda online para negocios de servicios</span>
+        <h1 class="hero-title reveal">Turnos online, <em>sin dolores de cabeza</em>.</h1>
+        <p class="hero-sub reveal">Tus clientes reservan solos, vos ves la agenda del día desde el celular. Sin llamadas cruzadas ni horarios pisados.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-accent" href="#contacto">Probar gratis</a>
+          <a class="btn btn-outline" href="#producto">Ver cómo funciona</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section manifesto">
+      <div class="container">
+        <p class="reveal">Turnly nació de una idea simple: la mayoría de los negocios de servicios pierden tiempo (y turnos) coordinando por WhatsApp. Una agenda que se administra sola libera ese tiempo para lo que importa: atender.</p>
+      </div>
+    </section>
+
+    <section class="section" id="producto">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Producto</span>
+          <h2 class="section-title">Qué hace</h2>
+          <p class="section-sub">Cuatro piezas simples, pensadas para usarse sin manual.</p>
+        </div>
+        <div class="rows" data-rows></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">En números</span>
+          <h2 class="section-title">Resultados de las pruebas piloto</h2>
+        </div>
+        <div class="stats-grid" data-stats></div>
+      </div>
+    </section>
+
+    <section class="section" id="precios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Precios</span>
+          <h2 class="section-title">Simple, como el producto</h2>
+        </div>
+        <div class="pricing-grid" data-pricing></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <span class="kicker">Contacto</span>
+        <h2 class="section-title">¿Charlamos?</h2>
+        <p class="section-sub" style="margin-inline:auto">Esto es una pieza de portfolio — si te copó el estilo, hablemos de tu proyecto real.</p>
+        <p style="margin-top:2rem"><a class="contact-link" data-email href="#">hola@turnly.dev</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span data-year></span> Turnly — proyecto conceptual dentro del portfolio de <a href="../index.html">Ayelen Robredo</a> / <a href="../arob-landing/index.html">AROB</a>.</p>
+    </div>
+  </footer>
+
+  <script defer src="lib/manifest.js"></script>
+  <script defer src="main.js?v=20260723"></script>
+</body>
+</html>
