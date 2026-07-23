@@ -569,6 +569,12 @@ button {
   align-items: center;
 }
 
+.about-grid-single {
+  grid-template-columns: 1fr;
+  max-width: 780px;
+  margin-inline: auto;
+}
+
 .about-figure {
   position: relative;
 }
