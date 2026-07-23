@@ -571,8 +571,7 @@ button {
 
 .about-grid-single {
   grid-template-columns: 1fr;
-  max-width: 780px;
-  margin-inline: auto;
+  max-width: 720px;
 }
 
 .about-figure {
@@ -772,13 +771,15 @@ button {
 }
 
 .process-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
 .process-step {
   position: relative;
+  flex: 0 1 calc(33.333% - 16px);
   padding: 32px 26px;
   border-radius: var(--radius);
   background: var(--bg);
@@ -1266,8 +1267,8 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 
-  .process-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .process-step {
+    flex-basis: calc(50% - 12px);
   }
 
   .skills-grid {
@@ -1337,9 +1338,13 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 
-  .process-grid,
   .portfolio-grid {
     grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    flex-basis: 100%;
+    max-width: 420px;
   }
 
   .track {
