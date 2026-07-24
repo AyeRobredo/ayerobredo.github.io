@@ -2,21 +2,22 @@
    1. Tokens
    ============================================================= */
 :root {
-  --bg:        #f3f5f9;
+  --bg:        #f4f6fb;
   --paper:     #ffffff;
-  --glass:     rgba(255, 255, 255, 0.5);
-  --glass-2:   rgba(255, 255, 255, 0.28);
-  --glass-border: rgba(255, 255, 255, 0.6);
-  --ink:       #10172a;
-  --ink-soft:  #46516b;
-  --ink-mute:  #808ba3;
-  --accent:    #3454d1;
-  --accent-2:  #6c5ce7;
-  --accent-soft: rgba(52, 84, 209, 0.12);
-  --line:      rgba(16, 23, 42, 0.1);
+  --glass:     rgba(255, 255, 255, 0.55);
+  --glass-2:   rgba(255, 255, 255, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.65);
+  --ink:       #000033;
+  --ink-soft:  #3a3a5c;
+  --ink-mute:  #75758f;
+  --accent:    #0033cc;
+  --accent-2:  #000080;
+  --accent-bright: #0055ff;
+  --accent-soft: rgba(0, 51, 204, 0.1);
+  --line:      rgba(0, 0, 51, 0.1);
 
-  --sans: "Inter", system-ui, -apple-system, sans-serif;
-  --display: "Sora", "Inter", system-ui, sans-serif;
+  --sans: "Montserrat", system-ui, -apple-system, sans-serif;
+  --display: "Arvo", "Montserrat", system-ui, serif;
 
   --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
   --ease-soft: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -124,9 +125,9 @@ input, textarea { font: inherit; color: inherit; }
 .btn-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #fff;
-  box-shadow: 0 12px 30px -10px rgba(52, 84, 209, 0.55);
+  box-shadow: 0 12px 30px -10px rgba(0, 51, 204, 0.5);
 }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 36px -8px rgba(52, 84, 209, 0.6); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 36px -8px rgba(0, 51, 204, 0.55); }
 
 .btn-glass {
   background: var(--glass);
@@ -183,14 +184,14 @@ input, textarea { font: inherit; color: inherit; }
   letter-spacing: -0.01em;
 }
 .brand-mark {
-  width: 34px; height: 34px;
-  border-radius: 10px;
-  display: grid; place-items: center;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #fff;
+  width: 30px; height: 30px;
+  display: block;
+  flex-shrink: 0;
+}
+.brand-word {
   font-family: var(--display);
   font-weight: 700;
-  font-size: 1.05rem;
+  letter-spacing: -0.01em;
 }
 .nav-links {
   display: none;
@@ -240,9 +241,9 @@ input, textarea { font: inherit; color: inherit; }
   inset: -10% -10% -10% -10%;
   z-index: -1;
   background:
-    radial-gradient(at 18% 22%, rgba(52, 84, 209, 0.35) 0%, transparent 55%),
-    radial-gradient(at 82% 18%, rgba(108, 92, 231, 0.32) 0%, transparent 55%),
-    radial-gradient(at 55% 85%, rgba(52, 84, 209, 0.18) 0%, transparent 60%);
+    radial-gradient(at 18% 22%, rgba(0, 51, 204, 0.35) 0%, transparent 55%),
+    radial-gradient(at 82% 18%, rgba(0, 0, 128, 0.32) 0%, transparent 55%),
+    radial-gradient(at 55% 85%, rgba(0, 85, 255, 0.2) 0%, transparent 60%);
   filter: blur(70px) saturate(150%);
   animation: meshDrift 26s ease-in-out infinite;
 }
@@ -261,6 +262,7 @@ input, textarea { font: inherit; color: inherit; }
 }
 
 .hero-inner { padding-block: 4rem; }
+.hero-mark { width: 68px; height: auto; margin-bottom: 1.4rem; }
 .hero-title {
   font-size: clamp(2.4rem, 6.6vw, 4.6rem);
   margin-top: 1.1rem;
@@ -328,7 +330,7 @@ input, textarea { font: inherit; color: inherit; }
 .glass-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 24px 50px -20px rgba(16, 23, 42, 0.25);
-  border-color: rgba(52, 84, 209, 0.3);
+  border-color: rgba(0, 51, 204, 0.3);
 }
 .card-icon {
   width: 46px; height: 46px;
@@ -431,7 +433,8 @@ input, textarea { font: inherit; color: inherit; }
   align-items: center; justify-content: space-between;
   gap: 1rem;
 }
-.footer-note { font-size: .85rem; color: var(--ink-mute); }
+.footer-note { display: inline-flex; align-items: center; gap: .5rem; font-size: .85rem; color: var(--ink-mute); }
+.footer-mark { width: 18px; height: 18px; opacity: .8; }
 .footer-links { display: flex; gap: 1.4rem; }
 .footer-links a { font-size: .85rem; color: var(--ink-soft); }
 .footer-links a:hover { color: var(--ink); }
