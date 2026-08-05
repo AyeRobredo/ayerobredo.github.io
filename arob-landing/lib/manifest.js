@@ -44,6 +44,7 @@
     contact: {
       email: "ayerobredo@gmail.com",
       whatsapp: "5492216045310",
+      instagram: "arob.code",
       portfolio: "https://ayerobredo.github.io"
     }
   };
