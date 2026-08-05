@@ -289,6 +289,14 @@ input, textarea { font: inherit; color: inherit; }
   background-clip: text;
   color: transparent;
 }
+.hero-subtitle {
+  margin-top: .7rem;
+  max-width: 42ch;
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+}
 .hero-sub {
   margin-top: 1.4rem;
   max-width: 46ch;
