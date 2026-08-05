@@ -22,7 +22,8 @@
     compass: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>',
     mail: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"></path><path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6Z"></path><polyline points="22 6 12 13 2 6"></polyline></svg>',
     whatsapp: '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.32 1.28 4.76L2 22l5.5-1.36a9.9 9.9 0 0 0 4.54 1.13h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 17.9c-1.44 0-2.85-.38-4.08-1.1l-.29-.17-2.9.72.77-2.83-.19-.29a8 8 0 0 1-1.22-4.32c0-4.42 3.6-8.02 8.03-8.02 2.14 0 4.15.84 5.66 2.35a7.95 7.95 0 0 1 2.35 5.67c0 4.43-3.6 8.03-8.03 8.03Zm4.4-6.02c-.24-.12-1.43-.7-1.65-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.35-1.67-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42-.14-.01-.3-.01-.46-.01-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"></path></svg>',
-    link: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>'
+    link: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>',
+    instagram: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>'
   };
 
   function mountServices() {
@@ -57,6 +58,9 @@
     items.push('<a class="contact-link" href="mailto:' + escHTML(c.email) + '"><span class="ico">' + ICONS.mail + '</span>' + escHTML(c.email) + '</a>');
     if (c.whatsapp) {
       items.push('<a class="contact-link" href="https://wa.me/' + escHTML(c.whatsapp) + '" target="_blank" rel="noopener"><span class="ico">' + ICONS.whatsapp + '</span>WhatsApp</a>');
+    }
+    if (c.instagram) {
+      items.push('<a class="contact-link" href="https://instagram.com/' + escHTML(c.instagram) + '" target="_blank" rel="noopener"><span class="ico">' + ICONS.instagram + '</span>@' + escHTML(c.instagram) + '</a>');
     }
     if (c.portfolio) {
       items.push('<a class="contact-link" href="' + escHTML(c.portfolio) + '" target="_blank" rel="noopener"><span class="ico">' + ICONS.link + '</span>Ver portfolio</a>');
