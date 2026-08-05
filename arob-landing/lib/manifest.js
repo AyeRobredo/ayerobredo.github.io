@@ -2,7 +2,7 @@
   "use strict";
   window.__BRAND__ = {
     name: "AROB",
-    tagline: "Desarrollo de software y producto.",
+    tagline: "Soluciones a Medida",
     year: new Date().getFullYear(),
 
     services: [
