@@ -291,7 +291,7 @@ input, textarea { font: inherit; color: inherit; }
 }
 .hero-subtitle {
   margin-top: .7rem;
-  max-width: 42ch;
+  max-width: 60ch;
   font-family: var(--sans);
   font-weight: 500;
   font-size: 1.05rem;
@@ -299,7 +299,7 @@ input, textarea { font: inherit; color: inherit; }
 }
 .hero-sub {
   margin-top: 1.4rem;
-  max-width: 46ch;
+  max-width: 60ch;
   font-size: 1.1rem;
   color: var(--ink-soft);
 }
